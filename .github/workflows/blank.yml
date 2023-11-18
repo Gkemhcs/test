@@ -1,0 +1,9 @@
+name: cli
+on: [push]
+jobs:
+    click:
+        runs-on: ubuntu-latest
+        steps:
+        - id: click
+          run: |
+              echo ${{toJson(github)}}
